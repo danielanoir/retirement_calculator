@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  background-color: #141414;
+  .container {
+    background-color: white;
+    width: 60vw;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-top: solid #108959 20px;
+    border-bottom: solid #108959 20px;
+    padding: 30px;
+    color: #232323;
+    .userInputs {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      color: #232323;
+      font-size: 20px;
+      input {
+        border-radius: 5px;
+        border: none;
+        background-color: #e3fcf5;
+        padding: 15px;
+        font-size:20px;
+      }
+    }
+  }
+}

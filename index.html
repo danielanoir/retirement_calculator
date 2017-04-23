@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Retirement Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="./libraries/d3/d3-3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="./libraries/c3/c3-0.4.11/c3.min.js"></script>
+    <link href="./libraries/c3/c3-0.4.11/c3.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <div class="container">
+    <h1>Retirement Savings Calculator</h1>
+    <div id="chart"></div>
+    <div class=userInputs>
+      <p>Existing Savings for Retirement:</p>
+        <input ng-model="savings" id="savings" type="number"></input>
+      <p>Aunnual Disposable Income:</p>
+      <input ng-model="income" id="income" type="number"></input>
+      <p>Annual Expenses:</p>
+        <input ng-model="expenses" id="expenses" type="number"></input>
+    </div>
+    </div>
+
+    <p>{{ result() }}</p>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
