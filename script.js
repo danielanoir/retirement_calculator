@@ -9,16 +9,16 @@ app.controller('myCtrl', function($scope) {
 
     var assets = [];
     yearlySavings = $scope.income - $scope.expenses;
-    yearOne = ($scope.savings * 1.05) + yearlySavings;
+    yearOne = $scope.savings;
     retirementNeeded = $scope.expenses / 0.04;
     assets.push('assets');
     assets.push(yearOne);
-      for (var i=1; i < 50; i++) {
+      for (var i=1; i < 51; i++) {
         var beforeRetirement = (assets[i] * 1.05) + yearlySavings;
         assetsBeforeRetirement = Math.round(beforeRetirement);
-        var afterRetirement = (assets[i] * 1.05) - $scope.expenses;
+        var afterRetirement = (assets[i] - $scope.expenses) * 1.05;
         assetsAfterRetirement = Math.round(afterRetirement);
-        if (beforeRetirement <= retirementNeeded) {
+        if (assets[i] < retirementNeeded) {
           assets.push(assetsBeforeRetirement);
         } else {
           assets.push(assetsAfterRetirement);

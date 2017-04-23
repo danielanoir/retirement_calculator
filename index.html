@@ -13,16 +13,17 @@
   <body>
     <div ng-app="myApp" ng-controller="myCtrl">
     <div class="container">
-    <h1>Retirement Savings Calculator</h1>
-    <div id="chart"></div>
-    <div class=userInputs>
-      <p>Existing Savings for Retirement:</p>
+      <h1>When can I retire?</h1>
+      <div class=userInputs>
+        <p>Savings</p>
         <input ng-model="savings" id="savings" type="number"></input>
-      <p>Aunnual Disposable Income:</p>
-      <input ng-model="income" id="income" type="number"></input>
-      <p>Annual Expenses:</p>
+        <p>Income (annual)</p>
+        <input ng-model="income" id="income" type="number"></input>
+        <p>Expenses (annual)</p>
         <input ng-model="expenses" id="expenses" type="number"></input>
-    </div>
+      </div>
+      <br><br><br>
+    <div id="chart"></div>
     </div>
 
     <p>{{ result() }}</p>
