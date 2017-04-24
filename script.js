@@ -2,21 +2,13 @@ var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
   $scope.result = function() {
 
-    //testing placeholder:
-    // function Main($scope) {
-      // $scope.savings = 50000;
-      // $scope.income = 60000;
-      // $scope.expenses = 24000;
-    // }
-    // $scope.yearsToRetire = 50;
-
     var assets = [];
     yearlySavings = $scope.income - $scope.expenses;
     yearOne = $scope.savings;
     retirementNeeded = $scope.expenses / 0.04;
 
     var titleNeedsChanging = true;
-    var yearsToRetire = 50;
+    var yearsToRetire = 1000;
 
     assets.push('assets');
     assets.push(yearOne);
@@ -36,8 +28,10 @@ app.controller('myCtrl', function($scope) {
         }
       }
 
-      if ($scope.income > $scope.expenses && $scope.expenses > 0) {        
-        $("#retireResults").html("You can retire in " + yearsToRetire + " years, once you have $" + retirementNeeded.toLocaleString() + ".");
+      if ($scope.income > $scope.expenses && $scope.expenses > 0 && yearsToRetire < 1000) {
+        $("#retireResults").html("You can retire in " + yearsToRetire + " years with $" + retirementNeeded.toLocaleString() + ".");
+      } else {
+        $("#retireResults").html("You can retire in __ years with $_______");
       }
 
 
