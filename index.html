@@ -13,7 +13,7 @@
   <body>
     <div ng-app="myApp" ng-controller="myCtrl">
     <div class="container">
-      <h1>When can I retire?</h1>
+      <h1 id="retireResults">When can I retire?</h1>
       <div class=userInputs>
         <p>Savings</p>
         <input ng-model="savings" id="savings" type="number"></input>
@@ -22,6 +22,8 @@
         <p>Expenses (annual)</p>
         <input ng-model="expenses" id="expenses" type="number"></input>
       </div>
+      <div>
+        <!-- <h3 ng-model="yearsToRetire" class="retireTime">You can retire in {{year}}!</h3> -->
       <br><br><br>
     <div id="chart"></div>
     </div>
