@@ -3,9 +3,11 @@ app.controller('myCtrl', function($scope) {
   $scope.result = function() {
 
     //testing placeholder:
-    $scope.savings = 50000;
-    $scope.income = 60000;
-    $scope.expenses = 24000;
+    // function Main($scope) {
+      // $scope.savings = 50000;
+      // $scope.income = 60000;
+      // $scope.expenses = 24000;
+    // }
     // $scope.yearsToRetire = 50;
 
     var assets = [];
@@ -34,7 +36,9 @@ app.controller('myCtrl', function($scope) {
         }
       }
 
+      if ($scope.income > $scope.expenses && $scope.expenses > 0) {        
         $("#retireResults").html("You can retire in " + yearsToRetire + " years, once you have $" + retirementNeeded.toLocaleString() + ".");
+      }
 
 
       var chart = c3.generate({

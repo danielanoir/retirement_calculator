@@ -16,14 +16,13 @@
       <h1 id="retireResults">When can I retire?</h1>
       <div class=userInputs>
         <p>Savings</p>
-        <input ng-model="savings" id="savings" type="number"></input>
+        <input ng-model="savings" id="savings" type="number" ng-init="savings=0"></input>
         <p>Income (annual)</p>
-        <input ng-model="income" id="income" type="number"></input>
+        <input ng-model="income" id="income" type="number" ng-init="income=0"></input>
         <p>Expenses (annual)</p>
-        <input ng-model="expenses" id="expenses" type="number"></input>
+        <input ng-model="expenses" id="expenses" type="number" ng-init="expenses=0"></input>
       </div>
       <div>
-        <!-- <h3 ng-model="yearsToRetire" class="retireTime">You can retire in {{year}}!</h3> -->
       <br><br><br>
     <div id="chart"></div>
     </div>
