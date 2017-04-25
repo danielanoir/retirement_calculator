@@ -1,5 +1,4 @@
 **Retirement Savings Calculator**
-
 <br>
 JavaScript, jQuery, AngularJS, C3, CSS, SCSS
 <br>
