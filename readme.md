@@ -1,8 +1,8 @@
 **Retirement Savings Calculator**
+=============================================================================
 <br>
 JavaScript, jQuery, AngularJS, C3, CSS, SCSS
 <br>
-=============================================================================
 <br>
 GOAL:<br>
 This app is designed to be easy to use. The goal is to show the impact of reducing spending on retirement.
