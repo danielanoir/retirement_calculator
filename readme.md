@@ -13,3 +13,5 @@ Retirement can occur when expenses equal 4% of assets
 NEXT STEPS:
 Add information regarding the app and assumptions through tooltips.
 Add logic to prevent the graph from displaying negative assets.
+Display input values as currency.
+Display data labels assets as currency.
