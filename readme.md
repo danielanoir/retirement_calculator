@@ -1,19 +1,19 @@
-**Retirement Savings Calculator**
-=============================================================================
-<br>
-JavaScript, jQuery, AngularJS, C3, CSS, SCSS
-<br>
-<br>
-GOAL:<br>
-This app is designed to be easy to use. The goal is to show the impact of reducing spending on retirement.
-<br><br>
-ASSUMPTIONS:<br>
-Assets grow by 5% each year<br>
-Retirement can occur when expenses equal 4% of assets<br>
-<br>
+# Retirement Savings Calculator
+___
 
-NEXT STEPS:<br>
-Add information regarding the app and assumptions through tooltips.<br>
-Add logic to prevent the graph from displaying negative assets.<br>
-Display input values as currency.<br>
-Display data labels assets as currency.
+JavaScript, jQuery, AngularJS, C3, CSS, SCSS
+
+### GOAL:
+This app is designed to be easy to use. The goal is to show the impact of reducing spending on retirement.
+
+### ASSUMPTIONS:
+- Assets grow by 5% each year
+- Retirement can occur when expenses equal 4% of assets
+
+
+### NEXT STEPS:
+
+- Add information regarding the app and assumptions through tooltips.
+- Add logic to prevent the graph from displaying negative assets.
+- Display input values as currency.
+- Display data labels assets as currency.
