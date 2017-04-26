@@ -13,7 +13,5 @@ This app is designed to be easy to use. The goal is to show the impact of reduci
 
 ### NEXT STEPS:
 
-- Add information regarding the app and assumptions through tooltips.
 - Add logic to prevent the graph from displaying negative assets.
-- Display input values as currency.
-- Display data labels assets as currency.
+- Add logic to prevent users from entering negative numbers in annual income and annual expenses. - Display data labels assets as currency.
