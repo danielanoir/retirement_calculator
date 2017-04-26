@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Retirement Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="./libraries/d3/d3-3.5.17/d3.min.js" charset="utf-8"></script>
@@ -15,14 +17,36 @@
     <div class="container">
       <h1 id="retireResults">When can I retire?</h1>
       <div class=userInputs>
-        <p>Savings</p>
-        <input ng-model="savings" id="savings" type="number" ng-init="savings=0"></input>
-        <p>Income (annual)</p>
+        <div class="userInputBox">
+        <p>Savings
+          <sup><i title="Current retirement savings." class="fa fa-question-circle-o" aria-hidden="true" style="color: #f2cb7d"></i></sup>
+        </p>
+        <div>
+          <i class="fa fa-usd fa-lg" style="color:#108959;" aria-hidden="true"></i>
+          <input ng-model="savings" id="savings" type="number" ng-init="savings=0"></input>
+        </div>
+      </div>
+      <div class="userInputBox">
+        <p>Annual <br>Income
+          <sup><i title="Disposable income. These are earnings available to spend or save, after taxes." class="fa fa-question-circle-o"  aria-hidden="true" style="color: #f2cb7d"></i></sup>
+        </p>
+      <div>
+        <i class="fa fa-usd fa-lg" style="color:#108959;" aria-hidden="true"></i>
         <input ng-model="income" id="income" type="number" ng-init="income=0"></input>
-        <p>Expenses (annual)</p>
-        <input ng-model="expenses" id="expenses" type="number" ng-init="expenses=0"></input>
+      </div>
+    </div>
+    <div class="userInputBox">
+        <p>Annual <br>Expenses
+          <sup><i title="Total expenses, including housing costs (rent or mortgage)." class="fa fa-question-circle-o"  aria-hidden="true" style="color: #f2cb7d"></i></sup>
+        </p>
+        <div>
+          <i class="fa fa-usd fa-lg" style="color:#108959;" aria-hidden="true"></i>
+          <input ng-model="expenses" id="expenses" type="number" ng-init="expenses=0"></input>
+        </div>
+      </div>
       </div>
       <div>
+
       <br><br><br>
     <div id="chart"></div>
     </div>
