@@ -43,6 +43,11 @@ app.controller('myCtrl', function($scope) {
         columns: [
           assets
         ],
+        // axis: {
+        //   y: {
+        //     min: 0,
+        //   }
+        // },
         colors: {
           assets: '#00a075',
         },

@@ -63,4 +63,14 @@ body {
       }
     }
   }
+.aboutText {
+  color: #626363;
+  a {
+    text-decoration: none;
+    color: #c18303;
+  }
+  a:hover {
+    color: #efa100;
+  }
+}
 }

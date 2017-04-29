@@ -51,5 +51,12 @@ body {
         padding: 15px;
         font-size: 20px;
         width: 50%; }
+  body .aboutText {
+    color: #626363; }
+    body .aboutText a {
+      text-decoration: none;
+      color: #c18303; }
+    body .aboutText a:hover {
+      color: #efa100; }
 
 /*# sourceMappingURL=style.css.map */
