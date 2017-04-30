@@ -1,3 +1,15 @@
+// $(document).ready(function(){
+//   $('#toolTip').on({
+//     "click": function() {
+//       $(this).tooltip({ items: "#toolTip", content: "Current retirement savings."});
+//       $(this).tooltip("open");
+//     },
+//     "mouseout": function() {
+//       $(this).tooltip("disabled");
+//     }
+//   });
+// });
+
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
   $scope.result = function() {
@@ -28,8 +40,14 @@ app.controller('myCtrl', function($scope) {
         }
       }
 
+      for (i=1; i <= assets.length; i++) {
+        if (assets[i] < 0) {
+          assets[i] = 0;
+        };
+      };
+
       if ($scope.income > $scope.expenses && $scope.expenses > 0 && yearsToRetire < 1000) {
-        $("#retireResults").html("You can retire in " + yearsToRetire + " years with $" + retirementNeeded.toLocaleString() + ".");
+        $("#retireResults").html("You can retire in <span>" + yearsToRetire + "</span> years with <span>$" + retirementNeeded.toLocaleString() + "</span>.");
       } else {
         $("#retireResults").html("You can retire in __ years with $_______");
       }
@@ -39,15 +57,18 @@ app.controller('myCtrl', function($scope) {
       legend: {
         hide: true
       },
+      axis: {
+        x: {
+          tick: {
+            values: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+          },
+          label: 'Years',
+        },
+      },
       data: {
         columns: [
           assets
         ],
-        // axis: {
-        //   y: {
-        //     min: 0,
-        //   }
-        // },
         colors: {
           assets: '#00a075',
         },

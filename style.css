@@ -32,6 +32,11 @@ body {
       z-index: 1; }
     body .container #tooltip:hover #tooltipText {
       visibility: visible; }
+    body .container .title {
+      font-size: 25px;
+      text-align: center;
+      padding-top: 60px;
+      color: #232323; }
     body .container p {
       padding-left: 25px; }
     body .container .userInputs {
@@ -58,5 +63,8 @@ body {
       color: #c18303; }
     body .aboutText a:hover {
       color: #efa100; }
+
+span {
+  color: #108959; }
 
 /*# sourceMappingURL=style.css.map */

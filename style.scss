@@ -1,3 +1,4 @@
+
 body {
   font-family: sans-serif;
   background-color: #141414;
@@ -38,7 +39,12 @@ body {
     #tooltip:hover #tooltipText {
         visibility: visible;
     }
-    .userInputBox{
+    .title {
+      font-size: 25px;
+      text-align: center;
+      padding-top: 60px;
+      color: #232323;
+
     }
     p {
       padding-left: 25px;
@@ -73,4 +79,8 @@ body {
     color: #efa100;
   }
 }
+}
+
+span {
+  color: #108959;
 }
