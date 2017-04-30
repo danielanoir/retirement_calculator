@@ -33,7 +33,7 @@ body {
     body .container #tooltip:hover #tooltipText {
       visibility: visible; }
     body .container .title {
-      font-size: 25px;
+      font-size: 20px;
       text-align: center;
       padding-top: 60px;
       color: #232323; }
