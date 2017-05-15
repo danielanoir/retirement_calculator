@@ -15,3 +15,6 @@ This app is designed to be easy to use. The goal is to show the impact of reduci
 
 - Add logic to prevent the graph from displaying negative assets.
 - Add logic to prevent users from entering negative numbers in annual income and annual expenses. - Display data labels assets as currency.
+
+
+![Calculator](./page.png "Calculator")
